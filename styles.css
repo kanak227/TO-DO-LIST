@@ -1,0 +1,118 @@
+*{
+    margin:0 ; 
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(40, 36, 36);
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.69);
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    max-height: 100vh;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+h1{
+    color: black;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add-task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    background: rgb(65, 61, 61);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    border-radius: 30px;
+    background-color: red;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+.tasklist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+ul li{
+    list-style-type: none;
+    padding: 12x 10px 12px 50px;
+    font-size: 20px;
+    user-select: none;
+    position: relative;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+ul li::before{
+    content: '⭕';
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+ul li.checked{
+    color: grey;
+    text-decoration: line-through;
+}
+
+
+
+ul li.checked::before{
+    content: '✔️';
+    text-decoration: none;
+    
+    font-size: 20px;
+}
+
+ul li span {
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    color: #555;
+    align-items: center;
+    margin-left: auto;
+}
+
+ul li span:hover{
+    background-color: rgb(145, 138, 138);
+}
